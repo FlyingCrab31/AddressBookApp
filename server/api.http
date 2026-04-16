@@ -1,0 +1,39 @@
+### 1. Create Contact
+POST http://localhost:8080/api/contacts
+Content-Type: application/json
+
+{
+  "id": "1",
+  "firstName": "Rishabh",
+  "lastName": "Pandey",
+  "address": "123 Street",
+  "city": "Delhi",
+  "state": "Delhi",
+  "zip": "110096",
+  "phone": "9876543210",
+  "email": "rishabh@gmail.com"
+}
+
+### 2. Get All Contacts
+GET http://localhost:8080/api/contacts
+
+### 3. Get Contact by ID
+GET http://localhost:8080/api/contacts/1
+
+### 4. Update Contact
+PUT http://localhost:8080/api/contacts/1
+Content-Type: application/json
+
+{
+  "firstName": "Rishabh",
+  "lastName": "Pandey",
+  "address": "New Address",
+  "city": "Noida",
+  "state": "UP",
+  "zip": "201301",
+  "phone": "9876543210",
+  "email": "rishabh@newmail.com"
+}
+
+### 5. Delete Contact
+DELETE http://localhost:8080/api/contacts/1
